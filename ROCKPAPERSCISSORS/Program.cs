@@ -26,8 +26,9 @@ namespace ROCKPAPERSCISSORS
                     Console.WriteLine("Choose between ROCK,PAPER and SCISSORS:  ");
                     inputPlayer = Console.ReadLine();
                     inputPlayer = inputPlayer.ToUpper();
+                    Console.Error.WriteLine("Invalid Entry");
 
-                    Random rnd = new Random();
+          Random rnd = new Random();
 
                     randomInt = rnd.Next(1, 4);
 
@@ -88,7 +89,7 @@ namespace ROCKPAPERSCISSORS
                             }
                             break;
                         default:
-                            Console.WriteLine("Invalid Entry");
+                            Console.Error.WriteLine("Invalid Entry");
                             break;
 
                     }
